@@ -1,0 +1,80 @@
+.bg-header{
+	height: 90px;
+}
+.col-sm{
+  padding: 30px;
+}
+.btn-outline-secondary{
+	height: 40px;	
+}
+.form-control{
+	height: 40px;
+}
+.link-header{
+	margin-right: 30px;
+	color: black;
+}
+.new{
+	width: 50px;
+	height: 25px;
+	background-color :#3DC47E;
+	color: white;
+	font-family: Lato;
+	font-size: 12px;
+	line-height: 15px;
+	padding: 5px 12px 5px 12px;
+	border-radius: 5px;
+
+}
+
+.title-new{
+	/*padding: 30px;*/
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 40px;
+	display: flex;
+	padding-top: 50px;
+}
+
+.img-1{
+	padding :35px;
+	padding-right: 176px;
+}
+
+.setting{
+	margin-left: 210px;
+}
+
+.information{
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	padding-top: 20px; 
+}
+.buy{
+	height: 40px;
+	width: 189px;
+	background-color: #4592FF;
+	color: white;
+	border-radius: 15px;
+	margin-top: 45px;
+}
+
+
+.content{
+	padding: 20px;
+}
+
+.carousel-botom{
+	padding-top: 70px;
+
+}
+.arrow,
+.carousel-botom{
+	background-color: red;
+}
+
