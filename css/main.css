@@ -45,6 +45,7 @@
 
 .setting{
 	margin-left: 210px;
+	float: left;
 }
 
 .information{
@@ -64,7 +65,6 @@
 	margin-top: 45px;
 }
 
-
 .content{
 	padding: 20px;
 }
@@ -73,8 +73,60 @@
 	padding-top: 70px;
 
 }
-.arrow,
-.carousel-botom{
-	background-color: red;
+.carousel-control-prev,
+.carousel-control-next{
+	color: gray;
+	font-size: 30px;
 }
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover{
+	color: black;
+}
+
+.card-title{
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	color: black;
+}
+.card-text{
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;	
+}
+.rv{
+	padding: 20px
+}
+
+a:hover{
+	text-decoration: none;
+	font-weight: bold;
+	color:black;
+}
+
+.firm{
+	background-color: rgba(40, 47, 54, 0.04);
+}
+
+.iconify{
+	font-size: 45px; 
+	color: #BEC0C2;
+	margin: 40px 51px  20px 0;
+}
+
+.title-sale{
+	padding-top: 60px;
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 50px;
+}
+
+
 
