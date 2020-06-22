@@ -17,11 +17,12 @@
 </head>
 <body>
 <!-- phần header -->	
+
 	<div class="bg-header bg-white border-bottom shadow-sm">
 		<div class="row">
 			<div class="col-sm">
 				<a href="file:///Users/manhtu/Documents/Project_html-css/Main.html#">
-					<img border="0" alt="Logo" src="logo_w3s.gif" width="100" height="100">
+					<i class="fas fa-shopping-cart"></i>
 				</a>
 		</div>
 	    <div class="col-sm">
@@ -35,28 +36,29 @@
 			  </div>
 	    </div>
 	    <div align="right" class="col-sm">
-	  		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+	  		<i class="fas fa-user"></i>
 	  		<a class="link-header" href="url">Sign in</a>
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+				<i class="fa fa-shopping-cart"></i>
 	  		<a class="link-header" href="url">Giỏ Hàng</a>	    
 	    </div>
 	  </div>
 	</div>
-<!-- phần new sản phẩm -->
+
+<!-- phần giới thiệu sản phẩm mới -->
 	<div class=" bg-new">
 		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 		  <div class="carousel-inner">  
 		    <div class="carousel-item active">
 		    	<div class="row setting">
-						<div class="col content">
+						<div class="col-md-4 content">
 							<span class="new">New</span>
 				    	<p class="title-new">Apple Watch Hermes Edition</p>
 				    	<p class="information">Stainless Steel Case with Fauve Barenia Leather</p>
 				    	<button type="button" class="btn btn-primary buy">$1,399 | Shop Now</button>
 						</div>
-						<div class="col img-1">
+						<div class="col-md-8 img-1">
 				      <a href="#">
-			 					<img border="0"src="https://www.imore.com/sites/imore.com/files/styles/larger/public/field/image/2015/09/apple-watch-hermes-double-tour-press.jpg?itok=E1d2BGg4" width="450" height="270" class="d-block w-500 " alt="1">
+			 					<img border="0"src="https://www.imore.com/sites/imore.com/files/styles/larger/public/field/image/2015/09/apple-watch-hermes-double-tour-press.jpg?itok=E1d2BGg4" width="550" height="374" class="d-block w-500 " alt="1">
 							</a>
 						</div>
 					</div>		
@@ -64,13 +66,13 @@
 
 		    <div class="carousel-item">
 		      <div class="row setting">
-						<div class="col content">
+						<div class="col-md-6 content">
 							<span class="new">New</span>
 				    	<p class="title-new">Samsung Galaxy S8+ 64 Gb Midnight Black</p>
 				    	<p class="information">Stainless Steel Case with Fauve Barenia Leather</p>
 				    	<button type="button" class="btn btn-primary buy">$829 | Shop Now</button>
 						</div>
-						<div class="col img-1">
+						<div class="col-md-6 img-1">
 				      <a href="#">
 			 					<img border="0"src="https://vn-test-11.slatic.net/p/2/samsung-galaxy-s8-plus-sm-g955fd-midnight-black-hang-phan-phoichinh-thuc-2102-5656375-591afab04ba37a591d738d3cff651076.jpg_500x500Q80.jpg" width="400" height="374" class="d-block w-500 " alt="2">
 							</a>
@@ -79,13 +81,13 @@
 		    </div>
 		    <div class="carousel-item">
 		      <div class="row setting">
-						<div class="col content">
+						<div class="col-md-6 content">
 							<span class="new">New</span>
 				    	<p class="title-new">Omega IEM Noise Isolating Earphones</p>
 				    	<p class="information">Stainless Steel Case with Fauve Barenia Leather</p>
 				    	<button type="button" class="btn btn-primary buy">$349 | Shop Now</button>
 						</div>
-						<div class="col img-1">
+						<div class="col-md-6 img-1">
 				      <a href="#">
 			 					<img border="0"src="https://cdn.shopify.com/s/files/1/1025/6603/products/Black-Omega_grande_09464862-663e-4972-a66b-9380c5acf124_2000x.jpeg?v=1497338642" width="400" height="374" class="d-block w-500 " alt="3">
 							</a>
@@ -135,6 +137,7 @@
 	    </div>
 	  </div>
  	</div>
+
 <!-- phần logo thương hiệu -->
  	<div align="center" class="firm">
 	 	<span class="iconify a1" data-icon="ion-logo-apple" data-inline="false"></span>
@@ -142,6 +145,7 @@
 	 	<span class="iconify" data-icon="mdi:sony-playstation" data-inline="false"></span>
 	 	<span class="iconify" data-icon="simple-icons:huawei" data-inline="false"></span>
  	</div>
+
 <!-- phần sản phẩm sale -->
  	<div class="container">
  		<p align="center" class="title-sale">Flash Deals</p>
@@ -411,7 +415,7 @@
 					<div class="row container card-bg border-bottom border-right border-left shadow-sm">
 		    		<div class="col-sm-3 border-right card-newsp">
 		    			<a href="#">
-		    				<img  src="https://images-na.ssl-images-amazon.com/images/I/715aC71nXEL._AC_SL1500_.jpg" width="140px" height="140px" class="center">
+		    				<img  src="https://images-na.ssl-images-amazon.com/images/I/715aC71nXEL._AC_SL1500_.jpg" width="140px" height="140px" class="center pic-1">
 		    			</a>
 		    			<p align="center" class="name-spnew">Polaroid Originals</p>
 		    			<p align="center" class="card-title">Accepts i-Type 600 Instant Film</p>
@@ -447,35 +451,35 @@
 					<div class="row container card-bg border-bottom border-right border-left shadow-sm">
 		    		<div class="col-sm-3 border-right card-newsp">
 		    			<a href="#">
-		    				<img  src="https://d25tv1xepz39hi.cloudfront.net/2016-01-31/files/1045.jpg" width="140px" height="140px" class="center">
+		    				<img  src="https://cdn.tgdd.vn/Products/Images/7077/197089/samsung-galaxy-watch-46mm-bac-nt-600x600.jpg" width="140px" height="140px" class="center">
 		    			</a>
-		    			<p align="center" class="name-spnew">Polaroid Originals</p>
+		    			<p align="center" class="name-spnew">Samsung Galaxy watch 46mm</p>
 		    			<p align="center" class="card-title">Accepts i-Type 600 Instant Film</p>
-		    			<p align="center" class="card-text">$199</p>
+		    			<p align="center" class="card-text">$250</p>
 		    		</div>
 		  			<div class="col-sm-3 border-right">
 		  				<a href="#">
-		  					<img  src="https://batdongsancorp.vn/wp-content/uploads/2019/12/2206.jpg" width="140px" height="140px" class="center">
+		  					<img  src="https://digihouse.vn/wp-content/uploads/2019/10/Liectroux-ZK901-Den-100x100.jpg" width="140px" height="140px" class="center">
 		  				</a>
-		    			<p align="center" class="name-spnew">DJI Spark Quadcopter</p>
+		    			<p align="center" class="name-spnew">Liectroux ZK901</p>
 		    			<p align="center" class="card-title">2-Axis Stabilized Camera</p>
-		    			<p align="center" class="card-text">$379</p>
+		    			<p align="center" class="card-text">$310</p>
 		  			</div>
 		  			<div class="col-sm-3 border-right">
 							<a href="#">
-			    			<img  src="http://baodulich.net.vn/data/data/haubg/2018/anh-dep-du-lich/1-2018/21462761_1125939480874318_4665203301540550833_n.jpg" width="140px" height="140px" class="center">
+			    			<img  src="https://www.sony.com.vn/image/e776e241f1d48b55ad6e630f862253b6?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF" width="140px" height="140px" class="center">
 			    		</a>
-		    			<p align="center" class="name-spnew">Fujifilm instax mini 9</p>
+		    			<p align="center" class="name-spnew">Sony Xperia 1</p>
 		    			<p align="center" class="card-title">Accepts Fujifilm Instant Film</p>
-		    			<p align="center" class="card-text">$99</p>	    			
+		    			<p align="center" class="card-text">$999</p>	    			
 		  			</div>
 		  			<div class="col-sm-3">
 		    			<a href="#">
-		    				<img  src="http://baodulich.net.vn/data/data/haubg/2018/anh-dep-du-lich/1-2018/21751804_1125939414207658_6736702876472515716_n.jpg" width="140px" height="160px" class="center">
+		    				<img  src="https://cdn.fptshop.com.vn/Uploads/Originals/2020/4/6/637217678681919352_asus-vivobook-x409fa-bac-1.png" width="140px" height="160px" class="center">
 		    			</a>
-		    			<p align="center" class="name-spnew">Apple 10.5" iPad Pro</p>
+		    			<p align="center" class="name-spnew">Asus VivoBook X409FA</p>
 		    			<p align="center" class="card-title">64GB, Wi-Fi, Rose Gold, Retina</p>
-		    			<p align="center" class="card-text">$719</p>
+		    			<p align="center" class="card-text">$499</p>
 		    		</div>	
 		  		</div>	    		
 		    </div>
@@ -493,6 +497,7 @@
 				<div class="col-sm-6">
 					<p class="title-newsp2">Apple Watch 3 Review: Don’t Overlook This Shiny, Speedy Upgrade</p>
 					<button type="button" class="btn btn-primary bt-newsp">Read More <i class="arrow right"></i></i>
+          <a href="https://newtechshop.vn/apple-smartwatch-series-3-review-p1.html"></a>
 					</button>
 				</div>
 				<div class="col-sm-6 pd-bottom">
@@ -503,7 +508,203 @@
 			</div>
 		</div>	
 	</div>
-		
+
+<!-- gợi ý -->
+	<div class="bg-goiy">
+		<p class="title-newsp" align="center">Gợi ý </p>
+		<div id="carouselExampleControls2" class="carousel slide2 " data-ride="carousel">
+		  <div class="carousel-inner container">
+		    <div class="carousel-item active">
+					<div class="row container card-bg border-bottom border-right border-left shadow-sm">
+		    		<div class="col-sm-3 border-right card-newsp">
+		    			<a href="#">
+		    				<img  src="https://images-na.ssl-images-amazon.com/images/I/715aC71nXEL._AC_SL1500_.jpg" width="140px" height="140px" class="center pic-1">
+		    			</a>
+		    			<p align="center" class="name-spnew">Polaroid Originals</p>
+		    			<p align="center" class="card-title">Accepts i-Type 600 Instant Film</p>
+		    			<p align="center" class="card-text">$199</p>
+		    		</div>
+		  			<div class="col-sm-3 border-right">
+		  				<a href="#">
+		  					<img  src="https://images.squarespace-cdn.com/content/v1/582e233a46c3c4327910c767/1501179625260-ATX2H9M87STYD1U8Z80O/ke17ZwdGBToddI8pDm48kMtiXMEMZ8ID8MVhA-T_Qc9Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIfy9uRsqnknGrsPwiW8VdnsJxMq6FvgYbxptNsO-6IOIKMshLAGzx4R3EDFOm1kBS/1495641624000_img_802918_3.jpg?format=1500w" width="140px" height="140px" class="center">
+		  				</a>
+		    			<p align="center" class="name-spnew">DJI Spark Quadcopter</p>
+		    			<p align="center" class="card-title">2-Axis Stabilized Camera</p>
+		    			<p align="center" class="card-text">$379</p>
+		  			</div>
+		  			<div class="col-sm-3 border-right">
+							<a href="#">
+			    			<img  src="https://anhducdigital.vn/media/product/3944_instax_mini_9_ice_blue.jpg" width="140px" height="140px" class="center">
+			    		</a>
+		    			<p align="center" class="name-spnew">Fujifilm instax mini 9</p>
+		    			<p align="center" class="card-title">Accepts Fujifilm Instant Film</p>
+		    			<p align="center" class="card-text">$99</p>	    			
+		  			</div>
+		  			<div class="col-sm-3">
+		    			<a href="#">
+		    				<img  src="https://didongthongminh.vn/upload_images/2017/10/apple-ipadpro12.9-4g-qsd-grey.png" width="110px" height="140px" class="center">
+		    			</a>
+		    			<p align="center" class="name-spnew">Apple 10.5" iPad Pro</p>
+		    			<p align="center" class="card-title">64GB, Wi-Fi, Rose Gold, Retina</p>
+		    			<p align="center" class="card-text">$719</p>
+		    		</div>	
+		  		</div>					
+		    </div>
+		   	<div class="carousel-item">
+					<div class="row container card-bg border-bottom border-right border-left shadow-sm">
+		    		<div class="col-sm-3 border-right card-newsp">
+		    			<a href="#">
+		    				<img  src="https://cdn.tgdd.vn/Products/Images/7077/197089/samsung-galaxy-watch-46mm-bac-nt-600x600.jpg" width="140px" height="140px" class="center">
+		    			</a>
+		    			<p align="center" class="name-spnew">Samsung Galaxy watch 46mm</p>
+		    			<p align="center" class="card-title">Accepts i-Type 600 Instant Film</p>
+		    			<p align="center" class="card-text">$250</p>
+		    		</div>
+		  			<div class="col-sm-3 border-right">
+		  				<a href="#">
+		  					<img  src="https://digihouse.vn/wp-content/uploads/2019/10/Liectroux-ZK901-Den-100x100.jpg" width="140px" height="140px" class="center">
+		  				</a>
+		    			<p align="center" class="name-spnew">Liectroux ZK901</p>
+		    			<p align="center" class="card-title">2-Axis Stabilized Camera</p>
+		    			<p align="center" class="card-text">$310</p>
+		  			</div>
+		  			<div class="col-sm-3 border-right">
+							<a href="#">
+			    			<img  src="https://www.sony.com.vn/image/e776e241f1d48b55ad6e630f862253b6?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF" width="140px" height="140px" class="center">
+			    		</a>
+		    			<p align="center" class="name-spnew">Sony Xperia 1</p>
+		    			<p align="center" class="card-title">Accepts Fujifilm Instant Film</p>
+		    			<p align="center" class="card-text">$999</p>	    			
+		  			</div>
+		  			<div class="col-sm-3">
+		    			<a href="#">
+		    				<img  src="http://baodulich.net.vn/data/data/haubg/2018/anh-dep-du-lich/1-2018/21751804_1125939414207658_6736702876472515716_n.jpg" width="140px" height="160px" class="center">
+		    			</a>
+		    			<p align="center" class="name-spnew">Asus VivoBook X409FA</p>
+		    			<p align="center" class="card-title">64GB, Wi-Fi, Rose Gold, Retina</p>
+		    			<p align="center" class="card-text">$499</p>
+		    		</div>	
+		  		</div>	    		
+		    </div>
+			</div>
+
+			<a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+				<i class="fas fa-chevron-left"></i>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+				<i class="fas fa-chevron-right"></i>
+			</a>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 bot-goiy">
+					<div class="row">
+						<div class="col-sm-3">
+							<i class="fas fa-credit-card logoo"></i>
+						</div>
+						<div class="col-sm-9 abc">
+							<span class="span-1">Simple Online Payment</span>
+						</div>
+					</div>		
+				</div>
+				<div class="col-sm-3 bot-goiy">
+					<div class="row">
+						<div class="col-sm-3">
+							<i class="far fa-clock logoo"></i>
+						</div>
+						<div class="col-sm-9 ">
+							<span class="span-1">24 Hours Support</span>
+						</div>
+					</div>		
+				</div>
+				<div class="col-sm-3 bot-goiy">
+					<div class="row">
+						<div class="col-sm-3">
+							<i class="far fa-compass logoo"></i>
+						</div>
+						<div class="col-sm-9 ">
+							<span class="span-1">Free Shipping Worldwide</span>
+						</div>
+					</div>		
+				</div>
+				<div class="col-sm-3 bot-goiy">
+					<div class="row">
+						<div class="col-sm-3">
+							<i class="far fa-star logoo"></i>
+						</div>
+						<div class="col-sm-9">
+							<span class="span-1">High Quality Products</span>
+						</div>
+					</div>		
+				</div>		
+			</div>
+		</div>	
+	</div>
+
+<!-- footer -->
+	<div class="bg-upper" >
+		<div class="row row-footer">
+			<div class="col-sm-4">				
+			</div>
+			<div class="col-sm-4">
+					<div class="input-group">
+          <input class="form-control border-secondary" type="search" value="Enter Your Email for Subscribe">
+          <div class="input-group-append">
+             <button class="btn btn-outline-secondary bt-send" type="button">
+                <i class="far fa-paper-plane" height="22" width="24"></i>
+             </button>
+          </div>
+			  </div>
+			</div>
+			<div class="col-sm-4 logo-footer">
+				<a class="btn-floating btn-lg btn-fb" type="button" role="button"><i class="fab fa-facebook-f"></i></a>
+				<a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="fab fa-twitter"></i></a>
+				<a class="btn-floating btn-lg btn-ins" type="button" role="button"><i class="fab fa-instagram"></i></a>
+			</div>
+		</div>
+	</div>
+	<div class="row bg-footer border-bottom ">
+		<div class="col-sm-2">
+			<p>Shop</p>
+			<p class="link-footer"><a href="danhmuc.html">Women</a></p>
+			<p class="link-footer"><a href="#">Men</a></p>
+			<p class="link-footer"><a href="#">Kid</a></p>
+		</div>
+		<div class="col-sm-2">
+			<p>Company</p>
+			<p class="link-footer"><a href="#">About Us</a></p>
+			<p class="link-footer"><a href="#">Our Store</a></p>
+			<p class="link-footer"><a href="#">Careers</a></p>
+		</div>
+		<div class="col-sm-2">
+			<p>Partners</p>
+			<p class="link-footer"><a href="#">Affiliate Program</a></p>
+			<p class="link-footer"><a href="#">Advertise</a></p>
+			<p class="link-footer"><a href="#">Vendor Database</a></p>	
+		</div>
+		<div class="col-sm-2">
+			<p>How to Buy</p>
+			<p class="link-footer"><a href="#">Making Payments</a></p>
+			<p class="link-footer"><a href="#">Delivery Options</a></p>
+			<p class="link-footer"><a href="#">Buyer Protection</a></p>
+		</div>
+		<div class="col-sm-2">
+			<p>Resources</p>
+			<p class="link-footer"><a href="#">Advertise</a></p>
+			<p class="link-footer"><a href="#">My Page</a></p>
+			<p class="link-footer"><a href="#">Links</a></p>
+		</div>
+		<div class="col-sm-2">
+			<p>Help</p>
+			<p class="link-footer"><a href="#">Contacts Us</a></p>
+			<p class="link-footer"><a href="#">FAQ</a></p>
+			<p class="link-footer"><a href="#">Vendor Privacy Policy</a></p>
+		</div>
+
+
+	</div>
+	
+
 </div>
 </body>
 </html>
