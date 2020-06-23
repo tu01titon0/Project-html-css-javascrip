@@ -1,485 +1,424 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap-custom.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sale.css" />
+    <link rel="stylesheet" href="css/danhmuc.css" />
+  </head>
 
-<head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="CSS/main.css">
-  <link rel="stylesheet" href="CSS/sale.css">
-  <link rel="stylesheet" href="CSS/danhmuc.css">
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-</head>
-
-<body>
-
-
-<!-- phần header -->
-  <div class="bg-header bg-white border-bottom shadow-sm">
-    <div class="row">
-      <div class="col-sm">
-        <a href="file:///Users/manhtu/Documents/Project_html-css/Main.html#">
-          <i class="fas fa-shopping-cart"></i>
-        </a>
-      </div>
-      <div class="col-sm">
-        <div class="input-group">
-          <input class="form-control border-secondary" type="search" value="search">
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary" type="button">
-              <i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="feather feather-search">
-                  <circle cx="11" cy="11" r="8"></circle>
-                  <line x1="20" y1="21" x2="16.65" y2="16.65"></line>
-                </svg> </i>
-            </button>
+  <body>
+    <!-- phần header -->
+    <div class="bg-header bg-white border-bottom shadow-sm">
+      <div class="row">
+        <div class="col-sm">
+          <a href="file:///Users/manhtu/Documents/Project_html-css/Main.html#">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </div>
+        <div class="col-sm">
+          <div class="input-group">
+            <input
+              class="form-control border-secondary"
+              type="search"
+              value="search"
+            />
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button">
+                <i
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-search"
+                  >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="20" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </i>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <div align="right" class="col-sm">
-        <i class="fas fa-user"></i>
-        <a class="link-header" href="url">Sign in</a>
-        <i class="fa fa-shopping-cart"></i>
-        <a class="link-header" href="url">Giỏ Hàng</a>
+        <div align="right" class="col-sm">
+          <i class="fas fa-user"></i>
+          <a class="link-header" href="url">Sign in</a>
+          <i class="fa fa-shopping-cart"></i>
+          <a class="link-header" href="url">Giỏ Hàng</a>
+        </div>
       </div>
     </div>
-  </div>
 
+    <section class="section-content bg padding-y">
+      <div class="container">
+        <div class="row">
+          <aside class="col-sm-3">
+            <div class="card card-filter">
+              <article class="card-group-item">
+                <header class="card-header">
+                  <a
+                    class=""
+                    aria-expanded="true"
+                    href="#"
+                    data-toggle="collapse"
+                    data-target="#collapse22"
+                  >
+                    <i class="icon-action fa fa-chevron-down"></i>
+                    <h6 class="title">By Category</h6>
+                  </a>
+                </header>
+                <div
+                  style=""
+                  class="filter-content collapse show"
+                  id="collapse22"
+                >
+                  <div class="card-body">
+                    <form class="pb-3">
+                      <div class="input-group">
+                        <input
+                          class="form-control"
+                          placeholder="Search"
+                          type="text"
+                        />
+                        <div class="input-group-append">
+                          <button class="btn btn-primary" type="button">
+                            <i class="fa fa-search"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
 
+                    <ul class="list-unstyled list-lg">
+                      <li>
+                        <a href="#"
+                          >Cras justo odio
+                          <span class="float-right badge badge-light round"
+                            >142</span
+                          >
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Dapibus ac facilisis
+                          <span class="float-right badge badge-light round"
+                            >3</span
+                          >
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Morbi leo risus
+                          <span class="float-right badge badge-light round"
+                            >32</span
+                          >
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Another item
+                          <span class="float-right badge badge-light round"
+                            >12</span
+                          >
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- card-body.// -->
+                </div>
+                <!-- collapse .// -->
+              </article>
+              <!-- card-group-item.// -->
+              <article class="card-group-item">
+                <header class="card-header">
+                  <a href="#" data-toggle="collapse" data-target="#collapse33">
+                    <i class="icon-action fa fa-chevron-down"></i>
+                    <h6 class="title">By Price</h6>
+                  </a>
+                </header>
+                <div class="filter-content collapse show" id="collapse33">
+                  <div class="card-body">
+                    <input
+                      type="range"
+                      class="custom-range"
+                      min="0"
+                      max="100"
+                      name=""
+                    />
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label>Min</label>
+                        <input
+                          class="form-control"
+                          placeholder="$0"
+                          type="number"
+                        />
+                      </div>
+                      <div class="form-group text-right col-md-6">
+                        <label>Max</label>
+                        <input
+                          class="form-control"
+                          placeholder="$1,0000"
+                          type="number"
+                        />
+                      </div>
+                    </div>
+                    <!-- form-row.// -->
+                    <button class="btn btn-block btn-outline-primary">
+                      Apply
+                    </button>
+                  </div>
+                  <!-- card-body.// -->
+                </div>
+                <!-- collapse .// -->
+              </article>
+              <!-- card-group-item.// -->
+              <article class="card-group-item">
+                <header class="card-header">
+                  <a href="#" data-toggle="collapse" data-target="#collapse44">
+                    <i class="icon-action fa fa-chevron-down"></i>
+                    <h6 class="title">By Feature</h6>
+                  </a>
+                </header>
+                <div class="filter-content collapse show" id="collapse44">
+                  <div class="card-body">
+                    <form>
+                      <label class="form-check">
+                        <input
+                          class="form-check-input"
+                          value=""
+                          type="checkbox"
+                        />
+                        <span class="form-check-label">
+                          <span class="float-right badge badge-light round"
+                            >5</span
+                          >
+                          Samsung
+                        </span>
+                      </label>
+                      <!-- form-check.// -->
+                      <label class="form-check">
+                        <input
+                          class="form-check-input"
+                          value=""
+                          type="checkbox"
+                        />
+                        <span class="form-check-label">
+                          <span class="float-right badge badge-light round"
+                            >13</span
+                          >
+                          Mersedes Benz
+                        </span>
+                      </label>
+                      <!-- form-check.// -->
+                      <label class="form-check">
+                        <input
+                          class="form-check-input"
+                          value=""
+                          type="checkbox"
+                        />
+                        <span class="form-check-label">
+                          <span class="float-right badge badge-light round"
+                            >12</span
+                          >
+                          Nissan Altima
+                        </span>
+                      </label>
+                      <!-- form-check.// -->
+                      <label class="form-check">
+                        <input
+                          class="form-check-input"
+                          value=""
+                          type="checkbox"
+                        />
+                        <span class="form-check-label">
+                          <span class="float-right badge badge-light round"
+                            >32</span
+                          >
+                          Another Brand
+                        </span>
+                      </label>
+                      <!-- form-check.// -->
+                    </form>
+                  </div>
+                  <!-- card-body.// -->
+                </div>
+                <!-- collapse .// -->
+              </article>
+              <!-- card-group-item.// -->
+            </div>
+            <!-- card.// -->
+          </aside>
+          <!-- col.// -->
+          <main class="col-sm-9">
+            <article class="card card-product">
+              <div class="card-body">
+                <div class="row">
+                  <aside class="col-sm-3">
+                    <div class="img-wrap"><img src="images/items/2.jpg" /></div>
+                  </aside>
+                  <!-- col.// -->
+                  <article class="col-sm-6">
+                    <h4 class="title">Ut wisi enim ad minim veniam</h4>
+                    <div class="rating-wrap mb-2">
+                      <ul class="rating-stars">
+                        <li style="width: 80%;" class="stars-active">
+                          <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </li>
+                      </ul>
+                      <div class="label-rating">132 reviews</div>
+                      <div class="label-rating">154 orders</div>
+                    </div>
+                    <!-- rating-wrap.// -->
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                      Ut wisi enim ad minim veniam
+                    </p>
+                    <dl class="dlist-align">
+                      <dt>Color</dt>
+                      <dd>Black and white</dd>
+                    </dl>
+                    <!-- item-property-hor .// -->
+                    <dl class="dlist-align">
+                      <dt>Material</dt>
+                      <dd>Syntetic, wooden</dd>
+                    </dl>
+                    <!-- item-property-hor .// -->
+                    <dl class="dlist-align">
+                      <dt>Delivery</dt>
+                      <dd>Russia, USA, and Europe</dd>
+                    </dl>
+                    <!-- item-property-hor .// -->
+                  </article>
+                  <!-- col.// -->
+                  <aside class="col-sm-3 border-left">
+                    <div class="action-wrap">
+                      <div class="price-wrap h4">
+                        <span class="price"> $56 </span>
+                        <del class="price-old"> $98</del>
+                      </div>
+                      <!-- info-price-detail // -->
+                      <p class="text-success">Free shipping</p>
+                      <br />
+                      <p>
+                        <a href="#" class="btn btn-primary"> Buy now </a>
+                        <a href="#" class="btn btn-secondary"> Details </a>
+                      </p>
+                      <a href="#"
+                        ><i class="fa fa-heart"></i> Add to wishlist</a
+                      >
+                    </div>
+                    <!-- action-wrap.// -->
+                  </aside>
+                  <!-- col.// -->
+                </div>
+                <!-- row.// -->
+              </div>
+              <!-- card-body .// -->
+            </article>
+            <!-- card product .// -->
 
-<!-- danhmuc -->
-	<div class="bg-danhmuc">
-		<ul class="breadcrumb bg-danhmuc">
-		  <li>
-		    <a href="Main.html" title="Trang chủ">
-		      HOME </a>
-		    <span>›</span>
-		    <meta property="position" content="0">
-		  </li>
-		  <li>
-		    <a href="/dtdd">
-		      Tất cả danh mục </a>
-		    <span>›</span>
-		    <meta property="position" content="1">
-		  </li>
-		  <li class="brand">
-		    <a href="/dtdd-oppo">
-		      Thời trang nữ </a>
-		    <meta property="position" content="2">
-		  </li>
-		</ul>
-
-		<div class="row">	
-			<div class="col-md-3 ">
-				<div>
-					<div class="container border-bottom">
-						<div class="dropdown">
-						  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    <span class="title-case"> Đầm</span>
-						  </button>
-						  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						    <a class="dropdown-item border-bottom" href="#">Đầm ngắn</a>
-						    <a class="dropdown-item border-bottom" href="#">Đầm dài</a>
-						    <a class="dropdown-item border-bottom" href="#">Maxi dress</a>
-						    <a class="dropdown-item" href="#">Đầm dự tiệc </a>
-						  </div>
-						</div>  
-					</div>
-					<div class="container border-bottom">
-						<p class="title-case">Brand</p>
-						<form class="form-inline">
-						  <i class="fas fa-search" aria-hidden="true"></i>
-						  <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
-						    aria-label="Search">
-						</form>
-						<div class="container">
-						  <div class="form-check">
-						    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-						    <label class="form-check-label" for="exampleCheck1">Nicole Miler</label>
-						  </div>
-						  <div class="form-check">
-						    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-						    <label class="form-check-label" for="exampleCheck1">Nanette Lepore</label>
-						  </div>
-						  <div class="form-check">
-						    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-						    <label class="form-check-label" for="exampleCheck1">Amanda Uprichard</label>
-						  </div>
-						  <div class="form-check">
-						    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-						    <label class="form-check-label" for="exampleCheck1">Alex Evenings</label>
-						  </div>
-						  <div class="form-check">
-						    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-						    <label class="form-check-label" for="exampleCheck1">Calvin Klein</label>
-						  </div>
-					  </div>
-					</div>
-					<div class="container border-bottom">
-						<p class="title-case">Style</p>
-						<div class="container">
-						  <div class="form-check">
-						    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-						    <label class="form-check-label" for="exampleCheck1">Fit & Flare</label>
-						  </div>
-						  <div class="form-check">
-						    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-						    <label class="form-check-label" for="exampleCheck1">Fitted</label>
-						  </div>
-						  <div class="form-check">
-						    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-						    <label class="form-check-label" for="exampleCheck1">Maxi</label>
-						  </div>
-					  </div>
-					</div>
-					<div class="container border-bottom">
-			  		<p class="title-case">Color</p>
-			  		<div class="row ">
-			  			<div class="col-sm-2">
-								<label class="container abc">
-								  <input type="radio" checked="checked" name="radio">
-								  <span class="checkmark"></span>
-								</label>
-							</div>
-							<div class="col-sm-2">
-								<label class="container abc">
-								  <input type="radio" checked="checked" name="radio">
-								  <span class="checkmark red"></span>
-								</label>
-							</div>
-							<div class="col-sm-2">
-								<label class="container abc">
-								  <input type="radio" checked="checked" name="radio">
-								  <span class="checkmark vangnhat"></span>
-								</label>
-							</div>
-							<div class="col-sm-2">
-								<label class="container abc">
-								  <input type="radio" checked="checked" name="radio">
-								  <span class="checkmark yellow"></span>
-								</label>
-							</div>
-							<div class="col-sm-2">
-								<label class="container abc">
-								  <input type="radio" checked="checked" name="radio">
-								  <span class="checkmark pink"></span>
-								</label>
-							</div>
-							<div class="col-sm-2">
-								<label class="container abc">
-								  <input type="radio" checked="checked" name="radio">
-								  <span class="checkmark purple"></span>
-								</label>
-							</div>
-						</div>
-						<p>
-						<div class="row ">
-			  			<div class="col-sm-2">
-								<label class="container abc">
-								  <input type="radio" checked="checked" name="radio">
-								  <span class="checkmark xanhnhat"></span>
-								</label>
-							</div>
-							<div class="col-sm-2">
-								<label class="container abc">
-								  <input type="radio" checked="checked" name="radio">
-								  <span class="checkmark xanhla"></span>
-								</label>
-							</div>
-							<div class="col-sm-2">
-								<label class="container abc">
-								  <input type="radio" checked="checked" name="radio">
-								  <span class="checkmark nau"></span>
-								</label>
-							</div>
-							<div class="col-sm-2">
-								<label class="container abc">
-								  <input type="radio" checked="checked" name="radio">
-								  <span class="checkmark black"></span>
-								</label>
-							</div>
-							<div class="col-sm-2">
-								<label class="container abc">
-								  <input type="radio" checked="checked" name="radio">
-								  <span class="checkmark xam"></span>
-								</label>
-							</div>
-							<div class="col-sm-2">
-								<label class="container abc">
-								  <input type="radio" checked="checked" name="radio">
-								  <span class="checkmark white"></span>
-								</label>
-							</div>
-						</div>	
-						<p>
-			  	</div>
-			  	<div class="container border-bottom">
-			  		<p class="container title-case">Size</p>
-			  		<input name="checkbox1" type="hidden" value="0"/>
-	          <input name="checkbox2" type="hidden" value="0"/>
-	          <input name="checkbox3" type="hidden" value="0"/>
-	          <input name="checkbox4" type="hidden" value="0"/>
-	          <div class="btn input-group" data-toggle="buttons">
-              <button type="button" class="btn btn-outline-secondary " data-checkbox-name="checkbox1"><span class="sp">2XS</span></button>
-              <button type="button" class="btn btn-outline-secondary " data-checkbox-name="checkbox2"><span class="sp">XS</span></button>
-              <button type="button" class="btn btn-outline-secondary" data-checkbox-name="checkbox3"><span class="sp">S</span></button>
-              <button type="button" class="btn btn-outline-secondary" data-checkbox-name="checkbox4"><span class="sp">M</span></button>
-	          </div>
-	          <input name="checkbox5" type="hidden" value="0"/>
-	          <input name="checkbox6" type="hidden" value="0"/>
-	          <input name="checkbox7" type="hidden" value="0"/>
-	          <input name="checkbox8" type="hidden" value="0"/>
-	          <div class="btn input-group" data-toggle="buttons">
-              <button type="button" class="btn btn-outline-secondary " data-checkbox-name="checkbox1">L</button>
-              <button type="button" class="btn btn-outline-secondary" data-checkbox-name="xl"><span class="sp">XL</span></button>
-              <button type="button" class="btn btn-outline-secondary" data-checkbox-name="2xl"><span class="sp">2XL</span></button>
-              <button type="button" class="btn btn-outline-secondary" data-checkbox-name="3xl"><span class="sp">3XL</span></button>
-	          </div>	
-			  	</div>
-					
-					<div>
-
-					</div>			  	
-
-				</div>
-
-			</div>
-
-			<div class="col-sm-8 container">
-			  <div class="row ">
-			    <div class="col-md-4">
-			      <div class="product-grid">
-			        <div class="product-image">
-			          <a href="#">
-			            <img class="pic-1" src="https://shopmaygame.com/wp-content/uploads/2018/04/1575691.jpg">
-			            <img class="pic-2"
-			              src="https://shopmaygame.com/wp-content/uploads/2018/04/QYab5mHAH3EkmGkYLrP95a-640x3421.jpg">
-			          </a>
-			          <ul class="social">
-			            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-			            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-			            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-			          </ul>
-			        </div>
-			        <div class="product-content">
-			          <h3 class="title"><a href="#">Nintendo Switch with Blue and Red Controllers</a></h3>
-			          <div class="price">$299
-			          </div>
-			          <a class="add-to-cart" href="">+ Add To Cart</a>
-			        </div>
-			      </div>
-			    </div>
-			    <div class="col-md-4">
-			      <div class="product-grid">
-			        <div class="product-image">
-			          <a href="#">
-			            <img class="pic-1"
-			              src="https://static.wixstatic.com/media/b3e409_6ff1f42ef4c74398b31ed59f229d3ca4~mv2_d_2000_2000_s_2.jpg/v1/fill/w_1000,h_1000,al_c,q_85,usm_0.66_1.00_0.01/b3e409_6ff1f42ef4c74398b31ed59f229d3ca4~mv2_d_2000_2000_s_2.webp">
-			            <img class="pic-2"
-			              src="https://static.wixstatic.com/media/b3e409_1e2688c286e54bbbabb98cf35c7a19c7~mv2.jpg/v1/fill/w_850,h_850,al_c,q_85/b3e409_1e2688c286e54bbbabb98cf35c7a19c7~mv2.webp">
-			          </a>
-			          <ul class="social">
-			            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-			            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-			            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-			          </ul>
-			        </div>
-			        <div class="product-content">
-			          <h3 class="title"><a href="#">Novation Launchkey Mini MK2 USB Controller</a></h3>
-			          <div class="price">$99.00
-			          </div>
-			          <a class="add-to-cart" href="">+ Add To Cart</a>
-			        </div>
-			      </div>
-			    </div>
-			    <div class="col-md-4">
-			      <div class="product-grid">
-			        <div class="product-image">
-			          <a href="#">
-			            <img class="pic-1"
-			              src="https://cdn11.bigcommerce.com/s-1gjhifmkdp/images/stencil/1280x1280/products/5426/12292/RED-7100242STD-90-6589-2__20769.1520532687.jpg?c=2?imbypass=on">
-			            <img class="pic-2"
-			              src="https://www.bhphotovideo.com/images/images2500x2500/red_digital_cinema_790_0546_3pk_scarlet_w_brain_with_3_pack_1347387.jpg">
-			          </a>
-			          <ul class="social">
-			            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-			            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-			            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-			          </ul>
-			        </div>
-			        <div class="product-content">
-			          <h3 class="title"><a href="#">Red Digital Cinema Brain with Dragon 5K Sensor</a></h3>
-			          <div class="price">$1.499.00
-			          </div>
-			          <a class="add-to-cart" href="">+ Add To Cart</a>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-				<p>
-			  <div class="row">
-			    <div class="col-md-4">
-			      <div class="product-grid">
-			        <div class="product-image">
-			          <a href="#">
-			            <img class="pic-1" src="https://shopmaygame.com/wp-content/uploads/2018/04/1575691.jpg">
-			            <img class="pic-2"
-			              src="https://shopmaygame.com/wp-content/uploads/2018/04/QYab5mHAH3EkmGkYLrP95a-640x3421.jpg">
-			          </a>
-			          <ul class="social">
-			            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-			            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-			            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-			          </ul>
-			        </div>
-			        <div class="product-content">
-			          <h3 class="title"><a href="#">Nintendo Switch with Blue and Red Controllers</a></h3>
-			          <div class="price">$299
-			          </div>
-			          <a class="add-to-cart" href="">+ Add To Cart</a>
-			        </div>
-			      </div>
-			    </div>
-			    <div class="col-md-4">
-			      <div class="product-grid">
-			        <div class="product-image">
-			          <a href="#">
-			            <img class="pic-1"
-			              src="https://static.wixstatic.com/media/b3e409_6ff1f42ef4c74398b31ed59f229d3ca4~mv2_d_2000_2000_s_2.jpg/v1/fill/w_1000,h_1000,al_c,q_85,usm_0.66_1.00_0.01/b3e409_6ff1f42ef4c74398b31ed59f229d3ca4~mv2_d_2000_2000_s_2.webp">
-			            <img class="pic-2"
-			              src="https://static.wixstatic.com/media/b3e409_1e2688c286e54bbbabb98cf35c7a19c7~mv2.jpg/v1/fill/w_850,h_850,al_c,q_85/b3e409_1e2688c286e54bbbabb98cf35c7a19c7~mv2.webp">
-			          </a>
-			          <ul class="social">
-			            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-			            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-			            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-			          </ul>
-			        </div>
-			        <div class="product-content">
-			          <h3 class="title"><a href="#">Novation Launchkey Mini MK2 USB Controller</a></h3>
-			          <div class="price">$99.00
-			          </div>
-			          <a class="add-to-cart" href="">+ Add To Cart</a>
-			        </div>
-			      </div>
-			    </div>
-			    <div class="col-md-4">
-			      <div class="product-grid">
-			        <div class="product-image">
-			          <a href="#">
-			            <img class="pic-1"
-			              src="https://cdn11.bigcommerce.com/s-1gjhifmkdp/images/stencil/1280x1280/products/5426/12292/RED-7100242STD-90-6589-2__20769.1520532687.jpg?c=2?imbypass=on">
-			            <img class="pic-2"
-			              src="https://www.bhphotovideo.com/images/images2500x2500/red_digital_cinema_790_0546_3pk_scarlet_w_brain_with_3_pack_1347387.jpg">
-			          </a>
-			          <ul class="social">
-			            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-			            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-			            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-			          </ul>
-			        </div>
-			        <div class="product-content">
-			          <h3 class="title"><a href="#">Red Digital Cinema Brain with Dragon 5K Sensor</a></h3>
-			          <div class="price">$1.499.00
-			          </div>
-			          <a class="add-to-cart" href="">+ Add To Cart</a>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-				<p>
-				<div class="row ">
-			    <div class="col-md-4">
-			      <div class="product-grid">
-			        <div class="product-image">
-			          <a href="#">
-			            <img class="pic-1" src="https://shopmaygame.com/wp-content/uploads/2018/04/1575691.jpg">
-			            <img class="pic-2"
-			              src="https://shopmaygame.com/wp-content/uploads/2018/04/QYab5mHAH3EkmGkYLrP95a-640x3421.jpg">
-			          </a>
-			          <ul class="social">
-			            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-			            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-			            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-			          </ul>
-			        </div>
-			        <div class="product-content">
-			          <h3 class="title"><a href="#">Nintendo Switch with Blue and Red Controllers</a></h3>
-			          <div class="price">$299
-			          </div>
-			          <a class="add-to-cart" href="">+ Add To Cart</a>
-			        </div>
-			      </div>
-			    </div>
-			    <div class="col-md-4">
-			      <div class="product-grid">
-			        <div class="product-image">
-			          <a href="#">
-			            <img class="pic-1"
-			              src="https://static.wixstatic.com/media/b3e409_6ff1f42ef4c74398b31ed59f229d3ca4~mv2_d_2000_2000_s_2.jpg/v1/fill/w_1000,h_1000,al_c,q_85,usm_0.66_1.00_0.01/b3e409_6ff1f42ef4c74398b31ed59f229d3ca4~mv2_d_2000_2000_s_2.webp">
-			            <img class="pic-2"
-			              src="https://static.wixstatic.com/media/b3e409_1e2688c286e54bbbabb98cf35c7a19c7~mv2.jpg/v1/fill/w_850,h_850,al_c,q_85/b3e409_1e2688c286e54bbbabb98cf35c7a19c7~mv2.webp">
-			          </a>
-			          <ul class="social">
-			            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-			            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-			            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-			          </ul>
-			        </div>
-			        <div class="product-content">
-			          <h3 class="title"><a href="#">Novation Launchkey Mini MK2 USB Controller</a></h3>
-			          <div class="price">$99.00
-			          </div>
-			          <a class="add-to-cart" href="">+ Add To Cart</a>
-			        </div>
-			      </div>
-			    </div>
-			    <div class="col-md-4">
-			      <div class="product-grid">
-			        <div class="product-image">
-			          <a href="#">
-			            <img class="pic-1"
-			              src="https://cdn11.bigcommerce.com/s-1gjhifmkdp/images/stencil/1280x1280/products/5426/12292/RED-7100242STD-90-6589-2__20769.1520532687.jpg?c=2?imbypass=on">
-			            <img class="pic-2"
-			              src="https://www.bhphotovideo.com/images/images2500x2500/red_digital_cinema_790_0546_3pk_scarlet_w_brain_with_3_pack_1347387.jpg">
-			          </a>
-			          <ul class="social">
-			            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-			            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-			            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-			          </ul>
-			        </div>
-			        <div class="product-content">
-			          <h3 class="title"><a href="#">Red Digital Cinema Brain with Dragon 5K Sensor</a></h3>
-			          <div class="price">$1.499.00
-			          </div>
-			          <a class="add-to-cart" href="">+ Add To Cart</a>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-			</div>  
-	</div>	
-	  
-
-</body>
+            <article class="card card-product">
+              <div class="card-body">
+                <div class="row">
+                  <aside class="col-sm-3">
+                    <div class="img-wrap"><img src="images/items/1.jpg" /></div>
+                  </aside>
+                  <!-- col.// -->
+                  <article class="col-sm-6">
+                    <h4 class="title">Ut wisi enim ad minim veniam</h4>
+                    <div class="rating-wrap mb-2">
+                      <ul class="rating-stars">
+                        <li style="width: 50%;" class="stars-active">
+                          <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </li>
+                      </ul>
+                      <div class="label-rating">12 reviews</div>
+                      <div class="label-rating">154 orders</div>
+                    </div>
+                    <!-- rating-wrap.// -->
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                      Ut wisi enim ad minim veniam
+                    </p>
+                    <dl class="dlist-align">
+                      <dt>Color</dt>
+                      <dd>Black and white</dd>
+                    </dl>
+                    <!-- item-property-hor .// -->
+                    <dl class="dlist-align">
+                      <dt>Material</dt>
+                      <dd>Syntetic, wooden</dd>
+                    </dl>
+                    <!-- item-property-hor .// -->
+                    <dl class="dlist-align">
+                      <dt>Delivery</dt>
+                      <dd>Russia, USA, and Europe</dd>
+                    </dl>
+                    <!-- item-property-hor .// -->
+                  </article>
+                  <!-- col.// -->
+                  <aside class="col-sm-3 border-left">
+                    <div class="action-wrap">
+                      <div class="price-wrap h4">
+                        <span class="price"> $245 </span>
+                        <del class="price-old"> $528</del>
+                      </div>
+                      <!-- info-price-detail // -->
+                      <p class="text-success">Free shipping</p>
+                      <br />
+                      <p>
+                        <a href="#" class="btn btn-primary"> Buy now </a>
+                        <a href="#" class="btn btn-secondary"> Details </a>
+                      </p>
+                      <a href="#"
+                        ><i class="fa fa-heart"></i> Add to wishlist</a
+                      >
+                    </div>
+                    <!-- action-wrap.// -->
+                  </aside>
+                  <!-- col.// -->
+                </div>
+                <!-- row.// -->
+              </div>
+              <!-- card-body .// -->
+            </article>
+            <!-- card product .// -->
+          </main>
+          <!-- col.// -->
+        </div>
+      </div>
+      <!-- container .//  -->
+    </section>
+  </body>
+  <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+  <link
+    href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    rel="stylesheet"
+    id="bootstrap-css"
+  />
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-2.0.0.min.js"></script>
   <script src="script/danhmuc.js"></script>
-
 </html>
