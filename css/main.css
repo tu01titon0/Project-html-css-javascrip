@@ -261,4 +261,8 @@ background: linear-gradient(to bottom,#AC8EE3 40%,white 60%); /* W3C */
 .bg-footer{
 	margin: 45px 113px 79px 113px;
 }
+.fa-chevron-left,
+.fa-chevron-right{
+	color: gray;
+}
 
