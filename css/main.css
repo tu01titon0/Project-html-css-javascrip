@@ -19,7 +19,6 @@
 	height: 25px;
 	background-color :#3DC47E;
 	color: white;
-	font-family: Lato;
 	font-size: 12px;
 	line-height: 15px;
 	padding: 5px 12px 5px 12px;
@@ -28,7 +27,6 @@
 }
 
 .title-new{
-	font-family: Roboto Slab;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 35px;
@@ -48,7 +46,6 @@
 }
 
 .information{
-	font-family: Lato;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
@@ -84,7 +81,6 @@
 }
 
 .card-title{
-	font-family: Lato;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
@@ -92,7 +88,6 @@
 	color: black;
 }
 .card-text{
-	font-family: Lato;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 14px;
@@ -120,7 +115,6 @@ a:hover{
 
 .title-sale{
 	padding-top: 60px;
-	font-family: Roboto Slab;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 40px;
@@ -136,7 +130,6 @@ a:hover{
 }
 
 .title-newsp{
-	font-family: Roboto Slab;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 40px;
@@ -160,7 +153,6 @@ a:hover{
 	width: 285px;
 }
 .name-spnew{
-	font-family: Roboto Slab;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 16px;
@@ -185,8 +177,7 @@ a:hover{
 	width: 139px;
 }
 
-.title-newsp2{
-	font-family: Roboto Slab;
+.title-newsp2 {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 25px;
@@ -218,7 +209,6 @@ background: linear-gradient(to bottom,#AC8EE3 40%,white 60%); /* W3C */
 }
 
 .span-1{
-	font-family: Roboto Slab;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 16px;
@@ -250,7 +240,6 @@ background: linear-gradient(to bottom,#AC8EE3 40%,white 60%); /* W3C */
 }
 
 .link-footer{
-	font-family: Lato;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;

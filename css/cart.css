@@ -8,36 +8,35 @@
 .pd-top{
   padding-top: 10px
 }
+
 .qc-1{
-  font-family: Lato;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
 
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 
-/* White-80 */
+  /* White-80 */
 
-color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.qc-2{
-  font-family: Lato;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
+.qc-2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
 
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 
-/* White */
+  /* White */
 
-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 
