@@ -2,8 +2,8 @@
 /* ==================== GLOBAL STYLES ======================= */
 @import url("https://rsms.me/inter/inter.css");
 html {
-  font-family: 'Inter', sans-serif;
-  font-size: 15px; }
+  font-size: 15px; 
+}
 
 /* ========================
 INCLUDE STYLES AND COMPONENTS
@@ -635,7 +635,6 @@ ul.row, ul.row-sm {
     padding-left: 28px;
     margin-bottom: 7px; }
   .list-check > li::before {
-    font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     color: #545454;
     position: absolute;
