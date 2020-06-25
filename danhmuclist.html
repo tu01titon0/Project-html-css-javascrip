@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/sale.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <!-- jQuery -->
+    <script src="js/jquery-2.0.0.min.js" type="text/javascript"></script>
+
+    <!-- Bootstrap4 files-->
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Font awesome 5 -->
+    <link href="fonts/fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
+
+    <!-- custom style -->
+    <link href="css/ui.css" rel="stylesheet" type="text/css"/>
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <!-- custom javascript -->
+    <script src="js/script.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+
+    <header class="section-header">
+      <section class="header-main">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-3 col-lg-3 col-12">
+              <a href="index.html">
+                <div class="brand-wrap">
+                  <img class="logo" src="images/logo.png" />
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 col-lg-5 col-12">
+              <form action="danhmuc.html" class="search">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search"
+                  />
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <!-- search-wrap .end// -->
+            </div>
+            <!-- col.// -->
+            <div class="col-md-5 col-lg-4 col-sm-12 col-12 text-md-right">
+              <div class="mt-3 mt-md-0">
+                <a href="dangnhap.html" class="btn btn-outline-primary">Đăng nhập</a>
+                <a href="dangky.html" class="btn btn-primary">Đăng ký</a>
+                <a href="giohang.html" class="btn btn-light">
+                  Giỏ hàng <span class="ml-2 badge badge-warning">4</span>
+                </a>
+                <button
+                  class="btn float-right btn-light d-md-none"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#main_nav"
+                  aria-controls="main_nav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <i class="fa fa-bars"></i>
+                </button>
+              </div>
+            </div>
+            <!-- col.// -->
+          </div>
+          <!-- row.// -->
+        </div>
+        <!-- container.// -->
+      </section>
+      <!-- header-main .// -->
+  
+      <nav
+        class="navbar navbar-main navbar-expand-md navbar-light border-top border-bottom"
+      >
+        <div class="container">
+          <div class="collapse navbar-collapse" id="main_nav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link pl-0" href="index.html"> Trang chủ </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="danhmuc.html">Điện thoại</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="danhmuccn.html">Laptop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="danhmucmtb.html">Máy tính bảng</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="danhmuckhac.html">Khác</a>
+              </li>
+            </ul>
+          </div>
+          <!-- collapse .// -->
+        </div>
+        <!-- container .// -->
+      </nav>
+    </header>
+
+    <section class="section-pagetop bg">
+      <div class="container">
+        <h2 class="title-page">Danh mục sản phẩm</h2>
+        <nav>
+          <ol class="breadcrumb text-white">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="danhmuc.html">Thời Trang</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Women
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section-content padding-y">
+      <div class="container">
+        <div class="row">
+          <aside class="col-md-3">
+            <div class="card mb-3">
+              <div class="card-body">
+                  <h5 class="card-title">Product type</h5>
+                  <ul class="list-menu">
+                    <li><a href="#">Váy <span class="badge badge-pill badge-light float-right">120</span> </a></li>
+                    <li><a href="#">Áo Phông <span class="badge badge-pill badge-light float-right">42</span> </a></li>
+                    <li><a href="#">Quần Jean <span class="badge badge-pill badge-light float-right">16</span> </a></li>
+                    <li><a href="#">Chân váy <span class="badge badge-pill badge-light float-right">87</span> </a></li>
+                    <li><a href="#">Giày <span class="badge badge-pill badge-light float-right">34</span></a></li>
+                    <li><a href="#">Phụ kiện <span class="badge badge-pill badge-light float-right">7</span></a></li>
+                  </ul>
+                </div>  
+            </div>  
+
+            <div class="card mb-3">
+              <div class="card-body">
+            
+                <h5 class="card-title">Price range</h5>
+                
+                <input type="range" class="custom-range" min="0" max="100" name="">
+                <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label>Min</label>
+                  <input class="form-control" placeholder="$0" type="number">
+                </div>
+                <div class="form-group text-right col-md-6">
+                  <label>Max</label>
+                  <input class="form-control" placeholder="$1,0000" type="number">
+                </div>
+                </div> <!-- form-row.// -->
+                <button class="btn btn-block btn-primary">Apply</button>
+              
+              </div>
+            </div>
+
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Sizes</h5>
+                   <label class="checkbox-btn">
+                    <input type="checkbox">
+                    <span class="btn btn-light"> 2XS </span>
+                  </label>                  
+                  <label class="checkbox-btn">
+                    <input type="checkbox">
+                    <span class="btn btn-light"> XS </span>
+                  </label>
+            
+                  <label class="checkbox-btn">
+                    <input type="checkbox">
+                    <span class="btn btn-light"> S </span>
+                  </label>
+            
+                  <label class="checkbox-btn">
+                    <input type="checkbox">
+                    <span class="btn btn-light"> M </span>
+                  </label>
+            
+                  <label class="checkbox-btn">
+                    <input type="checkbox">
+                    <span class="btn btn-light"> L </span>
+                  </label>
+
+                  <label class="checkbox-btn">
+                    <input type="checkbox">
+                    <span class="btn btn-light"> Xl </span>
+                  </label>
+                  <label class="checkbox-btn">
+                    <input type="checkbox">
+                    <span class="btn btn-light"> 2XL </span>
+                  </label>
+                  <label class="checkbox-btn">
+                    <input type="checkbox">
+                    <span class="btn btn-light"> 3XL </span>
+                  </label>
+              </div>
+            </div>  
+
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Màu sắc</h5>
+              
+                <div class="row">
+                  <div class="col-md-6">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" checked="" class="custom-control-input">
+                      <div class="custom-control-label">Đỏ </div>
+                    </label>
+                  </div> <!-- col.// -->
+                  <div class="col-md-6">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" checked="" class="custom-control-input">
+                      <div class="custom-control-label">Lục </div>
+                    </label>
+                  </div> <!-- col.// -->
+                  <div class="col-md-6">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" checked="" class="custom-control-input">
+                      <div class="custom-control-label">Xanh</div>
+                    </label>
+                  </div> <!-- col.// -->
+                  <div class="col-md-6">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" checked="" class="custom-control-input">
+                      <div class="custom-control-label">Cam</div>
+                    </label>
+                  </div> <!-- col.// -->
+                  <div class="col-md-6">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" checked="" class="custom-control-input">
+                      <div class="custom-control-label">Đen </div>
+                    </label>
+                  </div> <!-- col.// -->
+                  <div class="col-md-6">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <div class="custom-control-label">Trắng </div>
+                    </label>
+                  </div> <!-- col.// -->
+                  <div class="col-md-6">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" checked="" class="custom-control-input">
+                      <div class="custom-control-label">Xám </div>
+                    </label>
+                  </div> <!-- col.// -->
+                </div> <!-- row.// -->
+                <a href="danhmuc.html" class="btn btn-light btn-sm mt-2">Reset</a>
+              </div>
+            </div>
+
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Rating</h5>
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" checked="" class="custom-control-input">
+                  <div class="custom-control-label text-warning"> 
+                    <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                  </div>
+                </label>
+
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox"  checked="" class="custom-control-input">
+                  <div class="custom-control-label text-warning"> 
+                    <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                    <i class="fa fa-star"></i> 
+                  </div>
+                </label>
+
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox"   checked="" class="custom-control-input">
+                  <div class="custom-control-label text-warning"> 
+                    <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                  </div>
+                </label>
+
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox"  checked="" class="custom-control-input">
+                  <div class="custom-control-label text-warning"> 
+                    <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                  </div>
+                </label>
+              </div>
+            </div>
+          </aside>
+
+          <main class="col-md-9">
+            <header class="border-bottom mb-4 pb-3">
+              <div class="form-inline">
+                <span class="mr-md-auto">8 Items found </span>
+                <div class="btn-group">
+                  <a href="danhmuclist.html" class="btn btn-outline-secondary active" data-toggle="tooltip" title="List view">
+                    <i class="fa fa-bars"></i></a>
+                  <a href="danhmuc.html" class="btn btn-outline-secondary " data-toggle="tooltip" title="Grid view">
+                    <i class="fa fa-th"></i></a>
+                </div>  
+              </div>
+            </header>
+
+            <article class="card card-product-list">
+              <div class="card-body">
+                <div class="row">
+                  <aside class="col-sm-4">
+                    <a href="#" class="img-wrap"><img src="images/items/1.jpg"></a>
+                  </aside> <!-- col.// -->
+                  <div class="col-sm-8">
+                    <a href="#" class="btn-link float-right"> <i class="fa fa-heart"></i></a>
+                    <a href="#" class="title mt-2 h5">GoPro HERO7 Camera</a>
+                    <div class="d-flex mb-3">
+                      <div class="price-wrap mr-4">
+                        <span class="price h5">$299.00</span> 
+                      </div> <!-- price-dewrap // -->
+
+                      <div class="rating-wrap">
+                        <ul class="rating-stars">
+                          <li style="width:80%" class="stars-active"> 
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                          </li>
+                          <li>
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                          </li>
+                        </ul>
+                        <small class="label-rating text-muted">7/10</small>
+                      </div> <!-- rating-wrap.// -->
+                    </div>
+                    
+                    <ul class="list-bullet">
+                      <li>Optical heart sensor</li>
+                      <li>S3 with dual-core processor</li>
+                      <li>Accelerometer and gyroscope</li>
+                    </ul>
+
+
+                    <div class="form-row">
+                      <div class="form-group col-md flex-grow-0">
+                        <div class="input-group input-spinner">
+                          <div class="input-group-prepend">
+                            <button class="btn btn-light" type="button" id="button-plus"> + </button>
+                          </div>
+                          <input type="text" class="form-control" value="1">
+                          <div class="input-group-append">
+                            <button class="btn btn-light" type="button" id="button-minus"> − </button>
+                          </div>
+                        </div>  <!-- input-spinner.// -->
+                      </div> <!-- col.// -->
+                      <div class="form-group col-md">
+                        <a href="#" class="btn btn-primary"> <span class="text">Add to cart</span> <i class="fas fa-shopping-cart"></i> </a>
+                      </div> <!-- col.// -->
+                    </div> <!-- row.// -->
+                  </div> <!-- col.// -->
+                </div> <!-- row.// -->
+              </div> <!-- card-body .// -->
+            </article>
+
+            <article class="card card-product-list">
+              <div class="card-body">
+                <div class="row">
+                  <aside class="col-sm-4">
+                    <a href="#" class="img-wrap"><img src="images/items/1.jpg"></a>
+                  </aside> <!-- col.// -->
+                  <div class="col-sm-8">
+                    <a href="#" class="btn-link float-right"> <i class="fa fa-heart"></i></a>
+                    <a href="#" class="title mt-2 h5">GoPro HERO7 Camera</a>
+                    <div class="d-flex mb-3">
+                      <div class="price-wrap mr-4">
+                        <span class="price h5">$299.00</span> 
+                      </div> <!-- price-dewrap // -->
+
+                      <div class="rating-wrap">
+                        <ul class="rating-stars">
+                          <li style="width:80%" class="stars-active"> 
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                          </li>
+                          <li>
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                          </li>
+                        </ul>
+                        <small class="label-rating text-muted">7/10</small>
+                      </div> <!-- rating-wrap.// -->
+                    </div>
+                    
+                    <ul class="list-bullet">
+                      <li>Optical heart sensor</li>
+                      <li>S3 with dual-core processor</li>
+                      <li>Accelerometer and gyroscope</li>
+                    </ul>
+
+
+                    <div class="form-row">
+                      <div class="form-group col-md flex-grow-0">
+                        <div class="input-group input-spinner">
+                          <div class="input-group-prepend">
+                            <button class="btn btn-light" type="button" id="button-plus"> + </button>
+                          </div>
+                          <input type="text" class="form-control" value="1">
+                          <div class="input-group-append">
+                            <button class="btn btn-light" type="button" id="button-minus"> − </button>
+                          </div>
+                        </div>  <!-- input-spinner.// -->
+                      </div> <!-- col.// -->
+                      <div class="form-group col-md">
+                        <a href="#" class="btn btn-primary"> <span class="text">Add to cart</span> <i class="fas fa-shopping-cart"></i> </a>
+                      </div> <!-- col.// -->
+                    </div> <!-- row.// -->
+                  </div> <!-- col.// -->
+                </div> <!-- row.// -->
+              </div> <!-- card-body .// -->
+            </article>
+
+            <article class="card card-product-list">
+              <div class="card-body">
+                <div class="row">
+                  <aside class="col-sm-4">
+                    <a href="#" class="img-wrap"><img src="images/items/1.jpg"></a>
+                  </aside> <!-- col.// -->
+                  <div class="col-sm-8">
+                    <a href="#" class="btn-link float-right"> <i class="fa fa-heart"></i></a>
+                    <a href="#" class="title mt-2 h5">GoPro HERO7 Camera</a>
+                    <div class="d-flex mb-3">
+                      <div class="price-wrap mr-4">
+                        <span class="price h5">$299.00</span> 
+                      </div> <!-- price-dewrap // -->
+
+                      <div class="rating-wrap">
+                        <ul class="rating-stars">
+                          <li style="width:80%" class="stars-active"> 
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                          </li>
+                          <li>
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                          </li>
+                        </ul>
+                        <small class="label-rating text-muted">7/10</small>
+                      </div> <!-- rating-wrap.// -->
+                    </div>
+                    
+                    <ul class="list-bullet">
+                      <li>Optical heart sensor</li>
+                      <li>S3 with dual-core processor</li>
+                      <li>Accelerometer and gyroscope</li>
+                    </ul>
+
+
+                    <div class="form-row">
+                      <div class="form-group col-md flex-grow-0">
+                        <div class="input-group input-spinner">
+                          <div class="input-group-prepend">
+                            <button class="btn btn-light" type="button" id="button-plus"> + </button>
+                          </div>
+                          <input type="text" class="form-control" value="1">
+                          <div class="input-group-append">
+                            <button class="btn btn-light" type="button" id="button-minus"> − </button>
+                          </div>
+                        </div>  <!-- input-spinner.// -->
+                      </div> <!-- col.// -->
+                      <div class="form-group col-md">
+                        <a href="#" class="btn btn-primary"> <span class="text">Add to cart</span> <i class="fas fa-shopping-cart"></i> </a>
+                      </div> <!-- col.// -->
+                    </div> <!-- row.// -->
+                  </div> <!-- col.// -->
+                </div> <!-- row.// -->
+              </div> <!-- card-body .// -->
+            </article>
+
+            <article class="card card-product-list">
+              <div class="card-body">
+                <div class="row">
+                  <aside class="col-sm-4">
+                    <a href="#" class="img-wrap"><img src="images/items/1.jpg"></a>
+                  </aside> <!-- col.// -->
+                  <div class="col-sm-8">
+                    <a href="#" class="btn-link float-right"> <i class="fa fa-heart"></i></a>
+                    <a href="#" class="title mt-2 h5">GoPro HERO7 Camera</a>
+                    <div class="d-flex mb-3">
+                      <div class="price-wrap mr-4">
+                        <span class="price h5">$299.00</span> 
+                      </div> <!-- price-dewrap // -->
+
+                      <div class="rating-wrap">
+                        <ul class="rating-stars">
+                          <li style="width:80%" class="stars-active"> 
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                          </li>
+                          <li>
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                          </li>
+                        </ul>
+                        <small class="label-rating text-muted">7/10</small>
+                      </div> <!-- rating-wrap.// -->
+                    </div>
+                    
+                    <ul class="list-bullet">
+                      <li>Optical heart sensor</li>
+                      <li>S3 with dual-core processor</li>
+                      <li>Accelerometer and gyroscope</li>
+                    </ul>
+
+
+                    <div class="form-row">
+                      <div class="form-group col-md flex-grow-0">
+                        <div class="input-group input-spinner">
+                          <div class="input-group-prepend">
+                            <button class="btn btn-light" type="button" id="button-plus"> + </button>
+                          </div>
+                          <input type="text" class="form-control" value="1">
+                          <div class="input-group-append">
+                            <button class="btn btn-light" type="button" id="button-minus"> − </button>
+                          </div>
+                        </div>  <!-- input-spinner.// -->
+                      </div> <!-- col.// -->
+                      <div class="form-group col-md">
+                        <a href="#" class="btn btn-primary"> <span class="text">Add to cart</span> <i class="fas fa-shopping-cart"></i> </a>
+                      </div> <!-- col.// -->
+                    </div> <!-- row.// -->
+                  </div> <!-- col.// -->
+                </div> <!-- row.// -->
+              </div> <!-- card-body .// -->
+            </article>
+
+            <article class="card card-product-list">
+              <div class="card-body">
+                <div class="row">
+                  <aside class="col-sm-4">
+                    <a href="#" class="img-wrap"><img src="images/items/1.jpg"></a>
+                  </aside> <!-- col.// -->
+                  <div class="col-sm-8">
+                    <a href="#" class="btn-link float-right"> <i class="fa fa-heart"></i></a>
+                    <a href="#" class="title mt-2 h5">GoPro HERO7 Camera</a>
+                    <div class="d-flex mb-3">
+                      <div class="price-wrap mr-4">
+                        <span class="price h5">$299.00</span> 
+                      </div> <!-- price-dewrap // -->
+
+                      <div class="rating-wrap">
+                        <ul class="rating-stars">
+                          <li style="width:80%" class="stars-active"> 
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                          </li>
+                          <li>
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                          </li>
+                        </ul>
+                        <small class="label-rating text-muted">7/10</small>
+                      </div> <!-- rating-wrap.// -->
+                    </div>
+                    
+                    <ul class="list-bullet">
+                      <li>Optical heart sensor</li>
+                      <li>S3 with dual-core processor</li>
+                      <li>Accelerometer and gyroscope</li>
+                    </ul>
+
+
+                    <div class="form-row">
+                      <div class="form-group col-md flex-grow-0">
+                        <div class="input-group input-spinner">
+                          <div class="input-group-prepend">
+                            <button class="btn btn-light" type="button" id="button-plus"> + </button>
+                          </div>
+                          <input type="text" class="form-control" value="1">
+                          <div class="input-group-append">
+                            <button class="btn btn-light" type="button" id="button-minus"> − </button>
+                          </div>
+                        </div>  <!-- input-spinner.// -->
+                      </div> <!-- col.// -->
+                      <div class="form-group col-md">
+                        <a href="#" class="btn btn-primary"> <span class="text">Add to cart</span> <i class="fas fa-shopping-cart"></i> </a>
+                      </div> <!-- col.// -->
+                    </div> <!-- row.// -->
+                  </div> <!-- col.// -->
+                </div> <!-- row.// -->
+              </div> <!-- card-body .// -->
+            </article>
+            <nav class="mt-4" aria-label="Page navigation sample">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="danhmuc3.html">Previous</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="danhmuc.html">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="danhmuc2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="danhmuc3.html">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="danhmuc2.html">Next</a>
+                </li>
+              </ul>
+            </nav>   
+          </main>
+        </div>
+      </div>
+    </section>
+
+    <footer class="row bg-footer border-bottom ">
+      <div class="col-sm-2">
+        <p></p>
+        <p class="link-footer"><a href="danhmuc.html">Women</a></p>
+        <p class="link-footer"><a href="#">Men</a></p>
+        <p class="link-footer"><a href="#">Kid</a></p>
+      </div>
+      <div class="col-sm-2">
+        <p></p>
+        <p class="link-footer"><a href="#">About Us</a></p>
+        <p class="link-footer"><a href="#">Our Store</a></p>
+        <p class="link-footer"><a href="#">Careers</a></p>
+      </div>
+      <div class="col-sm-2">
+        <p>Partners</p>
+        <p class="link-footer"><a href="#">Affiliate Program</a></p>
+        <p class="link-footer"><a href="#">Advertise</a></p>
+        <p class="link-footer"><a href="#">Vendor Database</a></p>  
+      </div>
+      <div class="col-sm-2">
+        <p>How to Buy</p>
+        <p class="link-footer"><a href="#">Making Payments</a></p>
+        <p class="link-footer"><a href="#">Delivery Options</a></p>
+        <p class="link-footer"><a href="#">Buyer Protection</a></p>
+      </div>
+      <div class="col-sm-2">
+        <p>Resources</p>
+        <p class="link-footer"><a href="#">Advertise</a></p>
+        <p class="link-footer"><a href="#">My Page</a></p>
+        <p class="link-footer"><a href="#">Links</a></p>
+      </div>
+      <div class="col-sm-2">
+        <p>Help</p>
+        <p class="link-footer"><a href="#">Contacts Us</a></p>
+        <p class="link-footer"><a href="#">FAQ</a></p>
+        <p class="link-footer"><a href="#">Vendor Privacy Policy</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
