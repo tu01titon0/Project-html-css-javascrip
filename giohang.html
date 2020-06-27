@@ -86,7 +86,7 @@
       <div class="row">
         <aside class="col-lg-9">
           <div class="card">
-            <table class="table table-borderless table-shopping-cart">
+            <table id="list-san-pham" class="table table-borderless table-shopping-cart">
               <thead class="text-muted">
                 <tr class="small text-uppercase">
                   <th scope="col">Sản Phẩm</th>
@@ -123,6 +123,7 @@
                   <td>
                     <div class="price-wrap">
                       <var class="price">800.000 ₫</var>
+                      <input type="hidden" class="price-value" value="800000">
                     </div>
                     <!-- price-wrap .// -->
                   </td>
@@ -136,7 +137,7 @@
                     >
                       <i class="fa fa-heart"></i
                     ></a>
-                    <a href="" class="btn btn-light"> Remove</a>
+                    <button class="btn btn-light btn-remove"> Remove</button>
                   </td>
                 </tr>
                 <tr>
@@ -166,6 +167,7 @@
                   <td>
                     <div class="price-wrap">
                       <var class="price">999.000 ₫</var>
+                      <input type="hidden" class="price-value" value="999000">
                     </div>
                   </td>
                   <td class="text-right">
@@ -178,7 +180,7 @@
                     >
                       <i class="fa fa-heart"></i
                     ></a>
-                    <a href="" class="btn btn-light btn-round"> Remove</a>
+                    <button class="btn btn-light btn-round btn-remove"> Remove</button>
                   </td>
                 </tr>
                 <tr>
@@ -207,6 +209,7 @@
                   <td>
                     <div class="price-wrap">
                       <var class="price">804.450 ₫</var>
+                      <input type="hidden" class="price-value" value="804450">
                     </div>
                     <!-- price-wrap .// -->
                   </td>
@@ -220,7 +223,7 @@
                     >
                       <i class="fa fa-heart"></i
                     ></a>
-                    <a href="" class="btn btn-light btn-round"> Remove</a>
+                    <button class="btn btn-light btn-round btn-remove"> Remove</button>
                   </td>
                 </tr>
               </tbody>
@@ -265,7 +268,7 @@
             <div class="card-body">
               <dl class="dlist-align">
                 <dt>Tổng số tiền:</dt>
-                <dd class="text-right">200.000</dd>
+                <dd id="total-amount" class="text-right">200.000</dd>
               </dl>
               <dl class="dlist-align">
                 <dt>Discount:</dt>
@@ -273,7 +276,7 @@
               </dl>
               <dl class="dlist-align">
                 <dt>Total:</dt>
-                <dd class="text-right text-dark b">
+                <dd id="total-discount" class="text-right text-dark b">
                   <strong>180.000</strong>
                 </dd>
               </dl>
@@ -296,6 +299,6 @@
     <!-- container .//  -->
   </section>
 </body>
-  <script src="script/cart.js"></script>
+  <script src="js/giohang.js"></script>
 
 </html>
