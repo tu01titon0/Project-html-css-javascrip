@@ -16,7 +16,7 @@
 	<link href="css/responsive.css" rel="stylesheet" />
 
 	<!-- custom javascript -->
-	<script src="js/script.js" type="text/javascript"></script>
+	<!-- <script src="js/script.js" type="text/javascript"></script> -->
 
 </head>
 <body>
@@ -76,37 +76,38 @@
 			<!-- container.// -->
 		</section>
 	</header>
-  
-  <section class="section-conten padding-y" style="min-height:84vh">
+
+	<section class="section-conten padding-y" style="min-height:84vh">
 		<div class="card mx-auto" style="max-width: 380px; margin-top:100px;">
-			<div class="card-body">
-				<h4 class="card-title mb-4">Đăng nhập </h4>
+			<article id="form" class="card-body">
+				<header class="mb-4">
+					<h4 class="card-title">Đăng nhập</h4>
+				</header>
 				<form>
 					<a href="http://fb.com/" class="btn btn-facebook btn-block mb-2"> <i class="fab fa-facebook-f"></i> &nbsp Đăng nhập 
 						Facebook</a>
 					<a href="https://www.google.com.vn/" class="btn btn-google btn-block mb-4"> <i class="fab fa-google"></i> &nbsp Đăng nhập bằng Google</a>
+					<div class="form-row form-group">
+						<label>Tên đăng nhập</label>
+						<input type="text" id="username" class="form-control" placeholder="">
+						<small class="form-text">Error Message</small>
+					</div> <!-- form-group end.// -->
 					<div class="form-group">
-						<input name="" class="form-control" placeholder="Tài khoản" type="text">
-					</div> <!-- form-group// -->
-					<div class="form-group">
-						<input name="" class="form-control" placeholder="Mật khẩu" type="password">
-					</div> <!-- form-group// -->
-					<div class="form-group">
-						<a href="quenmk.html" class="float-right">Quên mật khẩu?</a>
-						<label class="float-left custom-control custom-checkbox"> <input type="checkbox"
-								class="custom-control-input" checked="">
-							<div class="custom-control-label"> Ghi nhớ mật khẩu </div>
-						</label>
-					</div> <!-- form-group form-check .// -->
+						<label>Mật khấu</label>
+						<input class="form-control" id="password" type="password">
+						<small class="form-text">Error Message</small>						
+					</div> <!-- form-group end.// -->
 					<div class="form-group">
 						<button type="submit" class="btn btn-primary btn-block"> Đăng nhập </button>
 					</div> <!-- form-group// -->
 				</form>
-			</div> <!-- card-body.// -->
+				<hr>
+				<p class="text-center mt-4">Không có tài khoản? <a href="dangky.html">Đăng ký </a></p>
+			</article>
 		</div> <!-- card .// -->
-		<p class="text-center mt-4">Không có tài khoản? <a href="dangky.html">Đăng ký </a></p>
 		<br><br>
 	</section>
 
 </body>
+	<script src="js/formdn.js" type="text/javascript"></script>
 </html>

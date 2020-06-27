@@ -378,7 +378,7 @@ p:last-child {
 
 .brand-wrap .logo, .navbar-brand .logo {
   margin-right: 7px;
-  max-height: 42px;
+  max-height: 60px;
   display: inline-block; }
 
 .navbar-main .nav-link {
@@ -1024,3 +1024,20 @@ a[class*='card'] {
 #newsp{
   background-color: green;
 }
+.form-group small{
+    /*color: var(--error-color);*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+  color: red;
+  visibility: hidden;
+}
+
+.form-group.error small{
+    visibility: visible;
+}
+
+#cl-red{
+  color: red;
+}
+
