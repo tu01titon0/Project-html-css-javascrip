@@ -1041,3 +1041,24 @@ a[class*='card'] {
   color: red;
 }
 
+.enlarge-image {
+  margin-top: 200px;
+    width: 100%;
+    float: left;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.enlarge-image:hover {
+   -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -moz-transform: scale(3);
+  -webkit-transform: scale(3);
+  -o-transform: scale(3);
+  -ms-transform: scale(3);
+  transform: scale(3);
+  
+  cursor: pointer;
+}
+

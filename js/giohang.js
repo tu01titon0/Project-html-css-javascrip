@@ -13,7 +13,8 @@ $('.btn-remove').click(function(e) {
 function calcTotal() {
   var total = getSum($('.price-value'));
   $('#total-amount').text(total);
-  $('#total-discount').text(total - 20000);
+  $('#discoundt').text(total/100);
+  $('#total-discount').text(total - total/100);
 }
 
 function getSum(items) {

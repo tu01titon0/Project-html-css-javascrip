@@ -10,8 +10,10 @@
 
 	<!-- Font awesome 5 -->
 	<link href="fonts/fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- custom style -->
+  <link href="css/pay.css" rel="stylesheet" type="text/css"/>
 	<link href="css/ui.css" rel="stylesheet" type="text/css"/>
 	<link href="css/responsive.css" rel="stylesheet"/>
 
@@ -122,21 +124,13 @@
                   </td>
                   <td>
                     <div class="price-wrap">
-                      <var class="price">800.000 ₫</var>
-                      <input type="hidden" class="price-value" value="800000">
+                      <var class="price">100 $</var>
+                      <input type="hidden" class="price-value" value="100">
                     </div>
                     <!-- price-wrap .// -->
                   </td>
                   <td class="text-right">
-                    <a
-                      data-original-title="Save to Wishlist"
-                      title=""
-                      href=""
-                      class="btn btn-light"
-                      data-toggle="tooltip"
-                    >
-                      <i class="fa fa-heart"></i
-                    ></a>
+                    
                     <button class="btn btn-light btn-remove"> Remove</button>
                   </td>
                 </tr>
@@ -166,20 +160,12 @@
                   </td>
                   <td>
                     <div class="price-wrap">
-                      <var class="price">999.000 ₫</var>
-                      <input type="hidden" class="price-value" value="999000">
+                      <var class="price">50 $</var>
+                      <input type="hidden" class="price-value" value="50">
                     </div>
                   </td>
                   <td class="text-right">
-                    <a
-                      data-original-title="Save to Wishlist"
-                      title=""
-                      href=""
-                      class="btn btn-light"
-                      data-toggle="tooltip"
-                    >
-                      <i class="fa fa-heart"></i
-                    ></a>
+                      </a>
                     <button class="btn btn-light btn-round btn-remove"> Remove</button>
                   </td>
                 </tr>
@@ -208,21 +194,12 @@
                   </td>
                   <td>
                     <div class="price-wrap">
-                      <var class="price">804.450 ₫</var>
-                      <input type="hidden" class="price-value" value="804450">
+                      <var class="price">30 $</var>
+                      <input type="hidden" class="price-value" value="30">
                     </div>
                     <!-- price-wrap .// -->
                   </td>
                   <td class="text-right">
-                    <a
-                      data-original-title="Save to Wishlist"
-                      title=""
-                      href=""
-                      class="btn btn-light"
-                      data-toggle="tooltip"
-                    >
-                      <i class="fa fa-heart"></i
-                    ></a>
                     <button class="btn btn-light btn-round btn-remove"> Remove</button>
                   </td>
                 </tr>
@@ -268,22 +245,81 @@
             <div class="card-body">
               <dl class="dlist-align">
                 <dt>Tổng số tiền:</dt>
-                <dd id="total-amount" class="text-right">200.000</dd>
+                <dd id="total-amount" class="text-right">0$</dd><span>$</span>
               </dl>
               <dl class="dlist-align">
                 <dt>Discount:</dt>
-                <dd class="text-right text-danger">- 20.000</dd>
+                <dd id="discoundt" class="text-right text-danger">0$</dd><span>$</span>
               </dl>
               <dl class="dlist-align">
                 <dt>Total:</dt>
                 <dd id="total-discount" class="text-right text-dark b">
-                  <strong>180.000</strong>
-                </dd>
+                  <strong>0$</strong>
+                </dd><span>$</span>
               </dl>
               <hr />
-              <a href="#" class="btn btn-primary btn-block">
-                Mua hàng
-              </a>
+              <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target=".bd-example-modal-lg">Thanh toán </button>
+                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <form action="/action_page.php" class="form-pay">
+      
+                        <div class="row1">
+                          <div class="col-50">
+                            <h3>Thông tin người nhận</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Tên người nhận </label>
+                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="john@example.com">
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Địa chỉ</label>
+                            <input type="text" id="adr" name="address" placeholder="123 ABC ">
+                            <label for="city"><i class="fa fa-institution"></i> Thành Phố</label>
+                            <input type="text" id="city" name="city" placeholder="Hồ Chí Minh">
+
+                            
+                          </div>
+
+                          <div class="col-50">
+                            <h3>Payment</h3>
+                            <label for="fname">Accepted Cards</label>
+                            <div class="icon-container">
+                              <i class="fa fa-cc-visa" style="color:navy;"></i>
+                              <i class="fa fa-cc-amex" style="color:blue;"></i>
+                              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                              <i class="fa fa-cc-discover" style="color:orange;"></i>
+                            </div>
+                            <label for="cname">Tên chủ thẻ</label>
+                            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                            <label for="ccnum">Mã số thẻ</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <div class="row">
+                              <div class="col-50">
+                                <label for="expyear">Ngày hết hạn</label>
+                                <input type="text" id="expyear" name="expyear" placeholder="2018">
+                              </div>
+                              <div class="col-50">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="352">
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <label>
+                          <input type="checkbox" checked="checked" name="sameadr"> Giao hàng 
+                        </label>
+                        <input type="submit" value="Thanh toán" class="btn bt11 btn-primary">
+                      </form>
+
+
+
+
+                    </div>
+                  </div>
+                </div>  
+
+
+
               <a href="danhmuc.html" class="btn btn-light btn-block"
                 >Tiếp tục mua hàng</a
               >
@@ -298,7 +334,65 @@
     </div>
     <!-- container .//  -->
   </section>
+
+  <footer class="section-footer border-top " style="background-color: white;">
+    <div class="container">
+      <section class="footer-top padding-y">
+        <div class="row">
+          <aside class="col-md-4">
+            <article class="mr-3">
+              <img src="images/logo.png"  class="logo" height="60px">
+              <p class="mt-3">Website bán và cập nhật các sản phẩm về công nghệ.</p>
+              <div>
+                  <a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-icon btn-light" title="Instagram" target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+                  <a class="btn btn-icon btn-light" title="Youtube" target="_blank" href="#"><i class="fab fa-youtube"></i></a>
+                  <a class="btn btn-icon btn-light" title="Twitter" target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </article>
+          </aside>
+          <aside class="col-sm-3 col-md-2">
+            <h6 class="title">About</h6>
+            <ul class="list-unstyled">
+              <li> <a href="#">About us</a></li>
+              <li> <a href="#">Services</a></li>
+              <li> <a href="#">Rules and terms</a></li>
+              <li> <a href="#">Blogs</a></li>
+            </ul>
+          </aside>
+          <aside class="col-sm-3 col-md-2">
+            <h6 class="title">Services</h6>
+            <ul class="list-unstyled">
+              <li> <a href="#">Help center</a></li>
+              <li> <a href="#">Money refund</a></li>
+              <li> <a href="#">Terms and Policy</a></li>
+              <li> <a href="#">Open dispute</a></li>
+            </ul>
+          </aside>
+          <aside class="col-sm-3  col-md-2">
+            <h6 class="title">For users</h6>
+            <ul class="list-unstyled">
+              <li> <a href="#"> User Login </a></li>
+              <li> <a href="#"> User register </a></li>
+              <li> <a href="#"> Account Setting </a></li>
+              <li> <a href="#"> My Orders </a></li>
+              <li> <a href="#"> My Wishlist </a></li>
+            </ul>
+          </aside>
+          <aside class="col-sm-2  col-md-2">
+            <h6 class="title">Our app</h6>
+            <a href="https://www.apple.com/ios/app-store/" class="d-block mb-2"><img src="images/appstore.png" height="40"></a>
+            <a href="https://play.google.com/store?hl=vi"  class="d-block mb-2"><img src="images/playmarket.png" height="40"></a>
+          </aside>
+        </div> <!-- row.// -->
+      </section>  <!-- footer-top.// -->
+
+      <section class="footer-copyright border-top">
+          <p class="float-left text-muted"> &copy 2020 Company  All rights resetved </p>
+          
+      </section>
+    </div><!-- //container -->
+  </footer>
 </body>
   <script src="js/giohang.js"></script>
-
 </html>
